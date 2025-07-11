@@ -1,0 +1,41 @@
+# Node & OS
+.DS_Store
+Thumbs.db
+
+vendor/
+node_modules/
+public/storage
+storage/*.key
+storage/app/public
+storage/debugbar
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+storage/logs/*
+
+# Laravel environment
+.env
+.env.*
+!.env.example
+
+# PHP & Composer
+composer.lock
+phpunit.xml
+phpunit.xml.dist
+
+# Docker & Build
+docker/*.log
+*.tar
+*.zip
+
+# Nginx or certs (if manually stored)
+certs/
+nginx/*.pem
+nginx/*.crt
+nginx/*.key
+
+# VSCode/IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,18 @@
+{
+	frankenphp
+}
+
+
+:443 {
+	
+	root * /app/public/
+	
+	encode zstd br gzip
+    file_server
+
+    tls /certs/yoursite.com-cer.pem /certs/yoursite.com-key.pem
+
+    php_server {
+        try_files {path} /index.php {query}
+    }
+}
