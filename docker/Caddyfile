@@ -10,7 +10,8 @@
 	encode zstd br gzip
     file_server
 
-    tls /certs/yoursite.com-cer.pem /certs/yoursite.com-key.pem
+    # Change name based your SSL certificate
+    tls /certs/yoursite.com-cer.pem /certs/yoursite.com-key.pem  Change where your SSL certificate directory
 
     php_server {
         try_files {path} /index.php {query}

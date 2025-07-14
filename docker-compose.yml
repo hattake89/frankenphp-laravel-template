@@ -12,7 +12,7 @@ services:
     volumes:
       - ./src/public:/app/public
       - ./src/storage:/app/storage
-      - /etc/ssl/letsencrypt:/certs:ro
+      - /etc/ssl/letsencrypt:/certs:ro ### Change where your SSL certificate directory
     working_dir: /app
     restart: unless-stopped
     command: ["/entrypoint.sh"]
