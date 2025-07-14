@@ -11,7 +11,7 @@
     file_server
 
     # Change name based your SSL certificate
-    tls /certs/yoursite.com-cer.pem /certs/yoursite.com-key.pem  Change where your SSL certificate directory
+    tls /certs/yoursite.com-cer.pem /certs/yoursite.com-key.pem
 
     php_server {
         try_files {path} /index.php {query}
