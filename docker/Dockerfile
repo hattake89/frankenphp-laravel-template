@@ -1,5 +1,5 @@
 # -------- STAGE 1: Builder --------
-FROM dunglas/frankenphp:php8.2 AS builder
+FROM dunglas/frankenphp:php8.4 AS builder
 
 WORKDIR /app
 
@@ -41,7 +41,7 @@ RUN chmod +x /entrypoint.sh
 RUN composer install --no-dev --optimize-autoloader 
 
 # -------- STAGE 2: Runtime --------
-FROM dunglas/frankenphp:php8.2
+FROM dunglas/frankenphp:php8.4
 
 WORKDIR /app
 
