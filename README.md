@@ -41,7 +41,7 @@ Copy laravel project to src/ folder
 
 💡 You can also create a fresh Laravel app inside src/:
 ```bash
-docker run --rm -v $(pwd)/src:/app laravelsail/php84-composer:latest composer create-project laravel/laravel .
+docker run --rm -v $(pwd)/src:/app laravelsail/php84-composer:latest composer create-project laravel/laravel /app
 ```
 
 ### 3. Setup Environment
